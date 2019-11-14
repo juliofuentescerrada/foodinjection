@@ -6,7 +6,7 @@ import { FoodService } from '../../food.service';
   templateUrl: './burger.component.html',
   styleUrls: ['./burger.component.css'],
   providers: [
-    { provide: FoodService, useValue: {food:'🍔'}}
+    { provide: FoodService, useValue: {food: {name:'Burger', icon:'🍔'}}}
   ]
 })
 export class BurgerComponent implements OnInit {

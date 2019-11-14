@@ -4,7 +4,7 @@ import { FoodService } from '../food.service';
 @Directive({
   selector: '[appVegan]',
   providers: [
-    { provide: FoodService, useValue: {food:'🥦'}}
+    { provide: FoodService, useValue: {food: { icon:'🥦', name:'Vegan'}}}
   ]
 })
 export class VeganDirective {

@@ -15,7 +15,7 @@ export class FoodComponent implements OnInit {
     @Optional() private veganDirective: VeganDirective,
     ){
       if(veganDirective){
-        this.foodService.food = '🥗'
+        this.foodService.food.icon = '🥗'
       }
       
     }
